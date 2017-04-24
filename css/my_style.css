@@ -1,0 +1,181 @@
+
+
+
+/* COLORS */
+/* Logo: #02b3e4 */
+/* H2 and App Text: #2d3c39 */
+/* Featured Work: #7d97ad */
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+hr {
+    width: 100%;
+    height: 3px;
+    background-color: #7d97ad
+}
+
+h2 {
+    color: #7d97ad;
+    font-size: 1.9em;
+    margin-bottom: 5px;
+}
+
+h1, h3 {
+    color: #2d3c39;
+}
+
+h1 {
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+
+h3 {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+
+/* Logo Styling */
+#logo{
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logo_letter {
+    font-size: 70px;
+    margin: 20px 20px 0 20px;
+    color: #02b3e4;
+    font-family: 'Playfair Display', serif;
+    border-bottom: 5px solid #02b3e4;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 10px;
+
+}
+
+
+
+
+
+/* Misc Use Classes */
+.big-thin-font {
+    font-weight: 300;
+    font-size: 3em;
+}
+
+.capital-text {
+    text-transform: uppercase;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+#logo_img {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+#main_image{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.projects {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.project {
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+@media screen and (max-width: 785px) {
+    /* Makes the indivdual projects max take half the page */
+    .project {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .projects {
+        justify-content: center;
+    }
+
+    .section_headline {
+        text-align: center;
+    }
+    #logo_letter{
+        display: none;
+    }
+    .project {
+        width: 100%;
+    }
+}
+
+
+
+.project img {
+    width:  250px;
+    height: 150px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+
+.project h3 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+.section_headline {
+    margin: 0 0 10px 10px;
+}
+
+.projects a {
+    color: #2d3c49;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.projects a:hover {
+    text-decoration: underline;
+}
+
+
+
+#portrait_image {
+    width: auto;
+    border-radius: 50%;
+}
+
+.text_body {
+    font-size: 1.5em;
+}
